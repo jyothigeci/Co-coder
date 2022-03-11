@@ -3,7 +3,7 @@ This project is meant for those who want to change the format of an image or tho
 
 ##Team Members
 1) Jyothish T R [https://github.com/Mr3lueSky]
-2) Jyothilakshmi
+2) Jyothilakshmi [https://github.com/jyothigeci]
 
 ##TEAM ID
 Python 12
