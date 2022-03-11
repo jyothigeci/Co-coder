@@ -11,16 +11,16 @@ def main():
         if int(user_choice) == 1:
             pixels = []
             for x in range(2):
-                variable = typer.prompt("Please enter the resize values in pixels: ")
+                variable = typer.prompt("Please enter the resize values(first enter height then the width) in pixels: ")
                 variable_int = int(variable)
                 pixels.append(variable_int)
             resized_image = im.resize(tuple(pixels),0)
-            resized_image.save(f"{file_path}")
+            end_path1 = typer.prompt("Where would you like to save the file?\n")
+            resized_image.save(f"{end_path1}/resized image.jpeg")
         elif int(user_choice) == 2:
             format = input("Enter a format: ")
-            print("The size of the image before conversion : ", end = "")
-            print(os.path.getsize(f"{file_path}"))
-            im1 = im.save(f"{file_path}.{format}")
+            end_path = typer.prompt("Where would you like to save the file?\n")
+            im1 = im.save(f"{end_path}.{format}")
         on_off = input("Do you want to continue? Type 'Yes' or 'No'")
         if on_off.lower() == "no":
             ON = False
